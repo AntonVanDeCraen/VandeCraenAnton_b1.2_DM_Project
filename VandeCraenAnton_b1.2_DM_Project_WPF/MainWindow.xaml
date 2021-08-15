@@ -1,0 +1,138 @@
+﻿<Window x:Class="VandeCraenAnton_b1._2_DM_Project_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VandeCraenAnton_b1._2_DM_Project_WPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="280"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10">
+            <Label  Content="Liquipedia"  Foreground="#FFB12A2A" FontSize="20"/>
+            <Label  Content="Overwatch"  Foreground="#FFB12A2A" FontSize="15"/>
+        </StackPanel>
+        
+        <Label  Content="Spelers" Grid.Column="1" HorizontalAlignment="Center" Margin="0,30,0,0" Foreground="#FFB12A2A" FontSize="20"/>
+        <Label  Grid.Column="3" Grid.RowSpan="3" Background="#FFB12A2A"/>
+
+        <DataGrid x:Name="datagridSpelers" Grid.Row="1" Grid.ColumnSpan="3" Margin="15" VerticalScrollBarVisibility="Visible" AutoGenerateColumns="False" IsReadOnly="True" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Voornaam"  Binding="{Binding voornaam}"/>
+                <DataGridTextColumn Header="Naam"  Binding="{Binding naam}"/>
+                <DataGridTextColumn Header="Bijnaam"  Binding="{Binding bijnaam}"/>
+                <DataGridTextColumn Header="Rol"  Binding="{Binding role}"/>
+                <DataGridTextColumn Header="Status"  Binding="{Binding status}"/>
+                <DataGridTextColumn Header="Regio"  Binding="{Binding Regios.naam}"/>
+            </DataGrid.Columns>
+            
+
+        </DataGrid>
+        <TextBox x:Name="txtZoeken"
+            Grid.Column="3"
+            Margin="30"
+            Padding="5"
+            BorderBrush="Black"
+            Background="White"
+            BorderThickness="1"
+            materialDesign:HintAssist.Hint="Zoeken naar spelers op bijnaam"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" KeyUp="txtZoeken_KeyUp" />
+        
+        <Button x:Name="btnToevoegen"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            VerticalAlignment="Top"
+            Margin="30"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="2"
+            
+            materialDesign:ButtonAssist.CornerRadius="25"
+             Click="btnToevoegen_Click">
+            <TextBlock
+              Text="Speler toevoegen" />
+        </Button>
+        <Button x:Name="btnAanpassen"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            VerticalAlignment="Top"
+            Margin="30"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="2"
+            Grid.Column="1"
+            materialDesign:ButtonAssist.CornerRadius="25"
+             Click="btnAanpassen_Click">
+            <TextBlock
+              Text="Speler aanpassen" />
+        </Button>
+        <Button x:Name="btnVerwijderen"
+            
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            VerticalAlignment="Top"
+            Margin="30"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="2"
+            Grid.Column="2"
+            materialDesign:ButtonAssist.CornerRadius="25"
+             Click="btnVerwijderen_Click">
+            <TextBlock
+              Text="Speler verwijderen" />
+        </Button>
+        <Button x:Name="btnTransfers"
+            VerticalAlignment="Top"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Margin="30"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="2"
+            Grid.Column="3"
+            materialDesign:ButtonAssist.CornerRadius="25"
+             Click="btnTransfers_Click">
+            <TextBlock
+              Text="Transfers" />
+        </Button>
+
+        <StackPanel x:Name="RegionButtons" Grid.Row="1" Grid.Column="3">
+            
+        </StackPanel>
+        <Button x:Name="btnSluiten"
+            VerticalAlignment="Center"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Margin="30,30,30,0"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="2"
+            Grid.Column="3"
+            
+            materialDesign:ButtonAssist.CornerRadius="25"
+             Click="btnSluiten_Click" >
+            <TextBlock
+                Text="Sluiten" />
+        </Button>
+
+
+
+    </Grid>
+</Window>

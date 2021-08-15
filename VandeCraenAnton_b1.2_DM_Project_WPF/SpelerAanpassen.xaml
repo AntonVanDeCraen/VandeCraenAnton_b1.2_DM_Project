@@ -1,0 +1,139 @@
+﻿<Window x:Class="VandeCraenAnton_b1._2_DM_Project_WPF.SpelerAanpassen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:VandeCraenAnton_b1._2_DM_Project_WPF"
+        mc:Ignorable="d"
+        Title="SpelerAanpassen" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="2" Content="Speler Toevoegen" HorizontalAlignment="Center" Margin="20" FontSize="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtVoornaam"
+            Grid.Row="1"
+            materialDesign:HintAssist.Hint="Voornaam"
+            Margin="100,10,10,10"
+            
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" />
+        <TextBox x:Name="txtAchternaam"
+            Grid.Row="1"
+            Grid.Column="1"
+            materialDesign:HintAssist.Hint="Naam"
+            Margin="10,10,100,10"
+            
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" />
+        <TextBox x:Name="txtBijnaam"
+            Grid.Row="2"
+            Grid.ColumnSpan="1"
+            materialDesign:HintAssist.Hint="Bijnaam"
+            Margin="100,10,10,10"
+            
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" />
+        <ComboBox x:Name="cmbRegios"
+            Grid.Row="2"
+            Grid.Column="1"
+            materialDesign:HintAssist.Hint="Regio"
+            Margin="10,20,100,11">
+
+
+        </ComboBox>
+        
+
+
+        <Grid
+         
+            Grid.Row="4"
+            Margin="100,10,100,10"
+            Grid.ColumnSpan="2"
+            
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label  Content="Role" ></Label>
+            <CheckBox x:Name="chkDPS" Content="DPS"   Width="auto" HorizontalAlignment="Center" Grid.Row="1" />
+            <CheckBox x:Name="chkTank" Content="Tank"   Grid.Column="1"  HorizontalAlignment="Center" Grid.Row="1"/>
+            <CheckBox x:Name="chkSupport" Content="Support" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1"  />
+
+        </Grid>
+        <Grid
+         
+            Grid.Row="5"
+            Margin="100,10,100,10"
+            Grid.ColumnSpan="2"
+            
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label  Content="Status" ></Label>
+            <RadioButton x:Name="rbActief" Content="Actief" HorizontalAlignment="Center" Grid.Row="1" IsChecked="True"></RadioButton>
+            <RadioButton x:Name="rbInactief" Content="Inactief" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"></RadioButton>
+
+
+        </Grid>
+
+        <Button x:Name="btnSpelerAanpassen"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Margin="100,30,100,0"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="6"
+            Grid.ColumnSpan="1"
+            
+            materialDesign:ButtonAssist.CornerRadius="25"
+            ToolTip="MaterialDesignRaisedDarkButton with Round Corners" Click="btnSpelerAanpassen_Click">
+            <TextBlock
+              Text="Speler Aanpassen" />
+        </Button>
+        <Button x:Name="btnSluiten"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Margin="100,30,100,0"
+            Height="30"
+            Width="auto"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="6"
+            Grid.Column="1"
+            
+            materialDesign:ButtonAssist.CornerRadius="25"
+            ToolTip="MaterialDesignRaisedDarkButton with Round Corners" Click="btnSluiten_Click">
+            <TextBlock
+              Text="Sluiten" />
+        </Button>
+
+    </Grid>
+</Window>

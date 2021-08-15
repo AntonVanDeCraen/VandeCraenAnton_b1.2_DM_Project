@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VandecraenAnton_Project_DM_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Regio">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naam" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Speler" Relationship="Self.FK_Regio" FromRole="Regio" ToRole="Speler" />
+  </EntityType>
+  <EntityType Name="Speler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naam" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bijnaam" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="regioID" Type="Int32" Nullable="false" />
+    <Property Name="geboortedatum" Type="DateTime" Precision="0" />
+    <Property Name="role" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="voornaam" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Regios" Relationship="Self.FK_Regio" FromRole="Speler" ToRole="Regio" />
+    <NavigationProperty Name="Transfer" Relationship="Self.FK_Speler_Transfer" FromRole="Speler" ToRole="Transfer" />
+    <NavigationProperty Name="Teams" Relationship="Self.TeamSpeler" FromRole="Speler" ToRole="Team" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="naam" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Transfer" Relationship="Self.FK_Transfer_Team" FromRole="Team" ToRole="Transfer" />
+    <NavigationProperty Name="Speler" Relationship="Self.TeamSpeler" FromRole="Team" ToRole="Speler" />
+  </EntityType>
+  <EntityType Name="Transfer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="vorigTeam" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nieuwTeam" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="datum" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="spelerID" Type="Int32" Nullable="false" />
+    <Property Name="teamID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Speler" Relationship="Self.FK_Speler_Transfer" FromRole="Transfer" ToRole="Speler" />
+    <NavigationProperty Name="Team" Relationship="Self.FK_Transfer_Team" FromRole="Transfer" ToRole="Team" />
+  </EntityType>
+  <Association Name="FK_Regio">
+    <End Role="Regio" Type="Self.Regio" Multiplicity="1" />
+    <End Role="Speler" Type="Self.Speler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regio">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Speler">
+        <PropertyRef Name="regioID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Speler_Transfer">
+    <End Role="Speler" Type="Self.Speler" Multiplicity="1" />
+    <End Role="Transfer" Type="Self.Transfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Speler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Transfer">
+        <PropertyRef Name="spelerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transfer_Team">
+    <End Role="Team" Type="Self.Team" Multiplicity="1" />
+    <End Role="Transfer" Type="Self.Transfer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Team">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Transfer">
+        <PropertyRef Name="teamID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TeamSpeler">
+    <End Role="Speler" Type="Self.Speler" Multiplicity="*" />
+    <End Role="Team" Type="Self.Team" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="LiquipediaEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Regio" EntityType="Self.Regio" />
+    <EntitySet Name="Speler" EntityType="Self.Speler" />
+    <EntitySet Name="Team" EntityType="Self.Team" />
+    <EntitySet Name="Transfer" EntityType="Self.Transfer" />
+    <AssociationSet Name="FK_Regio" Association="Self.FK_Regio">
+      <End Role="Regio" EntitySet="Regio" />
+      <End Role="Speler" EntitySet="Speler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Speler_Transfer" Association="Self.FK_Speler_Transfer">
+      <End Role="Speler" EntitySet="Speler" />
+      <End Role="Transfer" EntitySet="Transfer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transfer_Team" Association="Self.FK_Transfer_Team">
+      <End Role="Team" EntitySet="Team" />
+      <End Role="Transfer" EntitySet="Transfer" />
+    </AssociationSet>
+    <AssociationSet Name="TeamSpeler" Association="Self.TeamSpeler">
+      <End Role="Speler" EntitySet="Speler" />
+      <End Role="Team" EntitySet="Team" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

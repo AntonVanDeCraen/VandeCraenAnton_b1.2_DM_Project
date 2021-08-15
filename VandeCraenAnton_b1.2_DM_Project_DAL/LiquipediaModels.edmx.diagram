@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5c8391040cfd4dd9bbc4d7653eabff17" Name="Diagram1">
+        <EntityTypeShape EntityType="VandecraenAnton_Project_DM_DBModel.Regio" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VandecraenAnton_Project_DM_DBModel.Speler" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="VandecraenAnton_Project_DM_DBModel.Team" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VandecraenAnton_Project_DM_DBModel.Transfer" Width="1.5" PointX="7.5" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="VandecraenAnton_Project_DM_DBModel.FK_Regio" ManuallyRouted="false" />
+        <AssociationConnector Association="VandecraenAnton_Project_DM_DBModel.FK_Speler_Transfer" ManuallyRouted="false" />
+        <AssociationConnector Association="VandecraenAnton_Project_DM_DBModel.FK_Transfer_Team" ManuallyRouted="false" />
+        <AssociationConnector Association="VandecraenAnton_Project_DM_DBModel.TeamSpeler" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

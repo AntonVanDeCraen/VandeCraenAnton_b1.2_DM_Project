@@ -1,0 +1,171 @@
+20:21:03 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 64
+--------------------------------------------------------------------------------
+
+20:24:44 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 64
+--------------------------------------------------------------------------------
+
+20:24:48 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 64
+--------------------------------------------------------------------------------
+
+20:25:33 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 64
+--------------------------------------------------------------------------------
+
+20:38:26 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 64
+--------------------------------------------------------------------------------
+
+21:18:47 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+21:19:11 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+00:01:40 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+01:41:23 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+12:08:16 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+16:51:50 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.ToevoegenTransfer(Transfer transfer) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 150
+--------------------------------------------------------------------------------
+
+16:53:00 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.ToevoegenTransfer(Transfer transfer) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 150
+--------------------------------------------------------------------------------
+
+16:53:19 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+17:01:07 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.ToevoegenTransfer(Transfer transfer) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 150
+--------------------------------------------------------------------------------
+
+17:01:20 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.ToevoegenTransfer(Transfer transfer) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 150
+--------------------------------------------------------------------------------
+
+17:01:31 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+18:00:12 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+18:22:39 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+
+18:29:04 
+DbUpdateException
+An error occurred while updating the entries. See the inner exception for details.
+   bij System.Data.Entity.Internal.InternalContext.SaveChanges()
+   bij System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   bij System.Data.Entity.DbContext.SaveChanges()
+   bij VandeCraenAnton_b1._2_DM_Project_DAL.DataOperations.VerwijderenSpeler(Speler speler) in C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\DataOperations.cs:regel 62
+--------------------------------------------------------------------------------
+

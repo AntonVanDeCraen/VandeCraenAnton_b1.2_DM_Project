@@ -1,0 +1,14 @@
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\obj\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.csproj.AssemblyReference.cache
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\obj\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.csproj.CoreCompileInputs.cache
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.dll.config
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.pdb
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\EntityFramework.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\EntityFramework.xml
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\obj\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.csproj.CopyComplete
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\obj\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\obj\Debug\VandeCraenAnton_b1.2_DM_Project_DAL.pdb
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\VandeCraenAnton_b1.2_DM_Project_Model.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_DAL\bin\Debug\VandeCraenAnton_b1.2_DM_Project_Model.pdb

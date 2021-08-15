@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VandecraenAnton_Project_DM_DBModelStoreContainer" CdmEntityContainer="LiquipediaEntities">
+    <EntitySetMapping Name="Regio">
+      <EntityTypeMapping TypeName="VandecraenAnton_Project_DM_DBModel.Regio">
+        <MappingFragment StoreEntitySet="Regio">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naam" ColumnName="naam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Speler">
+      <EntityTypeMapping TypeName="VandecraenAnton_Project_DM_DBModel.Speler">
+        <MappingFragment StoreEntitySet="Speler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naam" ColumnName="naam" />
+          <ScalarProperty Name="bijnaam" ColumnName="bijnaam" />
+          <ScalarProperty Name="regioID" ColumnName="regioID" />
+          <ScalarProperty Name="geboortedatum" ColumnName="geboortedatum" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="voornaam" ColumnName="voornaam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Team">
+      <EntityTypeMapping TypeName="VandecraenAnton_Project_DM_DBModel.Team">
+        <MappingFragment StoreEntitySet="Team">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="naam" ColumnName="naam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transfer">
+      <EntityTypeMapping TypeName="VandecraenAnton_Project_DM_DBModel.Transfer">
+        <MappingFragment StoreEntitySet="Transfer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="vorigTeam" ColumnName="vorigTeam" />
+          <ScalarProperty Name="nieuwTeam" ColumnName="nieuwTeam" />
+          <ScalarProperty Name="datum" ColumnName="datum" />
+          <ScalarProperty Name="spelerID" ColumnName="spelerID" />
+          <ScalarProperty Name="teamID" ColumnName="teamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="TeamSpeler" TypeName="VandecraenAnton_Project_DM_DBModel.TeamSpeler" StoreEntitySet="TeamSpeler">
+      <EndProperty Name="Speler">
+        <ScalarProperty Name="id" ColumnName="spelerID" />
+      </EndProperty>
+      <EndProperty Name="Team">
+        <ScalarProperty Name="id" ColumnName="teamID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

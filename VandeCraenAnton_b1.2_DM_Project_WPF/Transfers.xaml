@@ -1,0 +1,108 @@
+﻿<Window x:Class="VandeCraenAnton_b1._2_DM_Project_WPF.Transfers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VandeCraenAnton_b1._2_DM_Project_WPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Transfers" Height="550" Width="900" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition MaxWidth="250"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="280"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10">
+            <Label  Content="Liquipedia"  Foreground="#FFB12A2A" FontSize="20"/>
+            <Label  Content="Overwatch"  Foreground="#FFB12A2A" FontSize="15"/>
+        </StackPanel>
+
+        <Label  Content="Transfers" Grid.Column="1" HorizontalAlignment="left" Margin="0,30,0,0" Foreground="#FFB12A2A" FontSize="20"/>
+        <Label  Grid.Column="2" Grid.RowSpan="3" Background="#FFB12A2A"/>
+
+        <DataGrid x:Name="datagridTransfers" Grid.Row="1" Grid.ColumnSpan="2" Margin="15" VerticalScrollBarVisibility="Visible" AutoGenerateColumns="False" IsReadOnly="True" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id"  Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Speler"  Binding="{Binding Speler}"/>
+                <DataGridTextColumn Header="Vorig team"  Binding="{Binding vorigTeam}"/>
+                <DataGridTextColumn />
+                <DataGridTextColumn Header="Nieuw team"  Binding="{Binding nieuwTeam}"/>
+                <DataGridTextColumn Header="datum"  Binding="{Binding datum}"/>
+            </DataGrid.Columns>
+
+        
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" VerticalAlignment="Center">
+            <Label  Content="selecteer speler"   FontSize="15"/>
+            <Label  Content="selecteer team"   FontSize="15" />
+        </StackPanel>
+        
+
+        <TextBox x:Name="txtZoeken"
+            Grid.Column="3"
+            Margin="30"
+            Padding="15"
+            BorderBrush="Black"
+            Background="White"
+            BorderThickness="1"
+            materialDesign:HintAssist.Hint="Zoeken in transfers"
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+            VerticalAlignment="Center" KeyUp="txtZoeken_KeyUp" />
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Button x:Name="btnToevoegen"
+            Grid.ColumnSpan="2"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Margin="10"
+            Height="30"
+            Width="200"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            
+            Grid.Column="1"
+            
+            HorizontalContentAlignment="Left"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            ToolTip="MaterialDesignRaisedDarkButton with Round Corners" HorizontalAlignment="Left" Click="btnToevoegen_Click" >
+                <TextBlock
+              Text="Nieuwe transfer" />
+            </Button>
+            <Button x:Name="btnVerwijderen"
+            Grid.ColumnSpan="2"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Margin="10"
+            Height="30"
+            Width="200"
+            Background="#FFB12A2A"
+            BorderThickness="0"
+            Grid.Row="2"
+            Grid.Column="1"
+            
+            HorizontalContentAlignment="Left"
+            materialDesign:ButtonAssist.CornerRadius="25"
+            ToolTip="MaterialDesignRaisedDarkButton with Round Corners" HorizontalAlignment="Left" Click="btnVerwijderen_Click" >
+                <TextBlock
+              Text="Transfer verwijderen" />
+            </Button>
+        </StackPanel>
+        
+        
+
+        <StackPanel x:Name="JaartalButtons" Grid.Row="1" Grid.Column="3">
+
+        </StackPanel>
+        <ComboBox x:Name="cmbSpelers" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" Grid.Row="2" Margin="15"/>
+        <ComboBox x:Name="cmbTeams" HorizontalAlignment="Right" VerticalAlignment="Center" Width="120" Grid.Row="2" Margin="0,15,15,0"/>
+
+
+
+    </Grid>
+</Window>

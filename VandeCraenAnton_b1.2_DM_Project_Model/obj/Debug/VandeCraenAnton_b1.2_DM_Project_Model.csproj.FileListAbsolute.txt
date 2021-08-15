@@ -1,0 +1,6 @@
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_Model\bin\Debug\VandeCraenAnton_b1.2_DM_Project_Model.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_Model\bin\Debug\VandeCraenAnton_b1.2_DM_Project_Model.pdb
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_Model\obj\Debug\VandeCraenAnton_b1.2_DM_Project_Model.csproj.AssemblyReference.cache
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_Model\obj\Debug\VandeCraenAnton_b1.2_DM_Project_Model.csproj.CoreCompileInputs.cache
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_Model\obj\Debug\VandeCraenAnton_b1.2_DM_Project_Model.dll
+C:\Users\Anton\source\repos\VandeCraenAnton_b1.2_DM_Project\VandeCraenAnton_b1.2_DM_Project_Model\obj\Debug\VandeCraenAnton_b1.2_DM_Project_Model.pdb
